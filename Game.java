@@ -1,7 +1,7 @@
 // Yunji Lee
 // 05/26/13
 // Game.java
-// This program is an out of class game project. There is a main game play
+// This game is a play on Pokemon/Pacman. There's a main game play
 // panel, an instructions panel, an options panel, and an upgrades panel.
 // The main play panel is a grid where coinciding with monsters causes
 // the user to go into encounter mode. To win, you need to get all the
@@ -129,7 +129,6 @@ public class Game implements KeyListener
 
 	public Game()
 	{
-
 		imageNum = 1;
 		imageName[1] = "char1.png"; // 1-4 char's
 		imageName[2] = "char2.png";
@@ -182,6 +181,11 @@ public class Game implements KeyListener
 		imageName[43] = "HardLocked.png";
 		imageName[44] = "MediumLockedHover.png";
 		imageName[45] = "HardLockedHover.png";
+
+		for(int i = 1; i < 46; i++)
+		{
+			imageName[i] = "./img/" + imageName[i];
+		}
 
 		sizeX[1] = 140; sizeY[1] = 202;
 		sizeX[2] = 177; sizeY[2] = 193;
